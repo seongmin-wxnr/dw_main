@@ -6,12 +6,14 @@
 
 /*
 
-°³ÀÎ °øºÎ¿ë
+ê°œì¸ ê³µë¶€ìš©
 
-½ºÆÄ°ÔÆ¼ÄÚµå ¤¶¤·¤¸
+ìŠ¤íŒŒê²Œí‹°ì½”ë“œ ã…†ã…‡ã…ˆ
 
 
 */
+
+// dw_f ë¶€ë¶„ ë•Œë¬¸ì— ë¦¬ëˆ…ìŠ¤ í™˜ê²½ì—ì„œëŠ” ì•ˆë ê±° ê°™ê¸´í•¨
 
 void addrptrToValue(DWORD pmvar) {
     std::cout << std::hex << pmvar << std::endl;
@@ -22,7 +24,7 @@ public:
         return new dw_f(*this);
     }
 
-    void getUserInfo() { // ¹ºÁö ¸ğ¸§ 
+    void getUserInfo() { // ë­”ì§€ ëª¨ë¦„ 
         std::string username;
         std::string homeDir;
 
@@ -44,14 +46,14 @@ public:
             homeDir = "Unknown";
         }
 #endif _WIN32
-        std::cout << "À¯Àú³×ÀÓ: " << username << std::endl;
-        std::cout << "¹ÙÅÁÈ­¸é °æ·Î: " << homeDir << std::endl;
+        std::cout << "ìœ ì €ë„¤ì„: " << username << std::endl;
+        std::cout << "ë°”íƒ•í™”ë©´ ê²½ë¡œ: " << homeDir << std::endl;
     }
 
     DWORD check_info() {
         std::cout << "[info] " << std::endl;
         getUserInfo();
-        std::cout << "ÇöÀç CPU»ç¿ë Á¡À¯À²: " << getCurrentValue() << "0x71 extern ret" << std::endl; Sleep(1000);
+        std::cout << "í˜„ì¬ CPUì‚¬ìš© ì ìœ ìœ¨: " << getCurrentValue() << "0x71 extern ret" << std::endl; Sleep(1000);
         return 0;
     }
 }; dw_f di_function;
@@ -103,13 +105,13 @@ int main() {
     std::string str_names = window_name;
     std::cin >> window_name; LPCSTR w_name = window_name.c_str();
 
-    HWND wind = FindWindowA(NULL, w_name); // ¸ÖÆ¼¹ÙÀÌÆ® ±â¹İÀ¸·Î ¹Ù²ã¾ßÇÔ ¾Æ¸¶µµ
+    HWND wind = FindWindowA(NULL, w_name); // ë©€í‹°ë°”ì´íŠ¸ ê¸°ë°˜ìœ¼ë¡œ ë°”ê¿”ì•¼í•¨ ì•„ë§ˆë„
     GetWindowThreadProcessId(wind, &VAR.pid);
     HANDLE handler = OpenProcess(PROCESS_ALL_ACCESS, false, VAR.pid);
-    std::cout << "[ÇöÀç ÇÁ·Î¼¼½º Á¡À¯À²]\n -> " << std::endl;
+    std::cout << "[í˜„ì¬ í”„ë¡œì„¸ìŠ¤ ì ìœ ìœ¨]\n -> " << std::endl;
     di_function.check_info(); 
     if (VAR.pid != 1) {
-        std::cout << str_names << " -> " << VAR.pid << " ÀÌ¹Ç·Î Á¸ÀçÇÏÁö ¾Ê´Â ÇÁ·Î¼¼½º" << std::endl;
+        std::cout << str_names << " -> " << VAR.pid << " ì´ë¯€ë¡œ ì¡´ì¬í•˜ì§€ ì•ŠëŠ” í”„ë¡œì„¸ìŠ¤" << std::endl;
         exit(1);
     }
     else {
@@ -121,7 +123,7 @@ int main() {
         system("cls");
         while (GetAsyncKeyState(0x01) & 0x8000) {
 
-        } // mathlogic.h ÂÊ¿¡¼­ ÇÔ¼ö Á¤ÀÇÇÏ°í ³¡³»¸é µÉ°Å °°±ä ÇÑµ¥ 
+        } // mathlogic.h ìª½ì—ì„œ í•¨ìˆ˜ ì •ì˜í•˜ê³  ëë‚´ë©´ ë ê±° ê°™ê¸´ í•œë° 
     }
      
 }
