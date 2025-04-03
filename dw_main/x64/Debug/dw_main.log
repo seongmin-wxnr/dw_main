@@ -1,0 +1,10 @@
+﻿  source.cpp
+C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\dw_main\offsets.h(7,15): warning C4091: 'extern ': 변수를 선언하지 않으면 'pVar' 왼쪽은 무시됩니다.
+C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\dw_main\offsets.h(15,15): warning C4091: 'extern ': 변수를 선언하지 않으면 'Local_Player' 왼쪽은 무시됩니다.
+C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\dw_main\offsets.h(25,15): warning C4091: 'extern ': 변수를 선언하지 않으면 'practice_bot' 왼쪽은 무시됩니다.
+C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\dw_main\source.cpp(69,36): warning C4312: '형식 캐스트': 'DWORD'에서 더 큰 'LPVOID *'(으)로의 변환입니다.
+C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\dw_main\source.cpp(73,40): warning C4312: '형식 캐스트': 'unsigned long'에서 더 큰 'LPVOID *'(으)로의 변환입니다.
+C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\dw_main\source.cpp(66,64): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
+C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\dw_main\source.cpp(83,36): warning C4312: '형식 캐스트': 'DWORD'에서 더 큰 'void *'(으)로의 변환입니다.
+C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\dw_main\source.cpp(93,36): warning C4312: '형식 캐스트': 'DWORD'에서 더 큰 'void *'(으)로의 변환입니다.
+  dw_main.vcxproj -> C:\Users\ICO\OneDrive\바탕 화면\dwProject\ssdwasd\dw_main\x64\Debug\dw_main.exe
